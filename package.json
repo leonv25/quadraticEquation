@@ -1,0 +1,30 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000q\u0000u\u0000a\u0000d\u0000r\u0000a\u0000t\u0000i\u0000c\u0000E\u0000q\u0000u\u0000a\u0000t\u0000i\u0000o\u0000n\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonv25/quadraticEquation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonv25/quadraticEquation/issues"
+  },
+  "homepage": "https://github.com/leonv25/quadraticEquation#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.27.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.35.1"
+  }
+}

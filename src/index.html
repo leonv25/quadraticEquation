@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="app">
+        <div class="logo">
+            <h1>Калькулятор для пошуку значень, які задовільняють рівняння (розвязок рівнянь)</h1>
+        </div>
+
+        <div class="info">
+            <h2>Типи рівнянь, які підтримуються (можуть бути розвязані) калькулятором:</h2>
+            <ul>
+                <li>лінійні рівняння: b*x + c = 0;</li>
+                <li>квадратні рівняння: a*x<span>2</span> + b*x + c = 0.</li>
+            </ul>
+        </div>
+
+        <section class="quadratic_equation">
+            <div class="data">
+                <div class="input">
+                    <div class="input__txt">Введіть параметри для рівняння:</div>
+                    <div class="input__wrapper">
+                        <div class="input__block">
+                            <div class="input__parameter">Введіть параметр "a":</div>
+                            <input required placeholder="число" type="text">
+                        </div>
+                        <div class="input__block">
+                            <div class="input__parameter">Введіть параметр "b":</div>
+                            <input required placeholder="число" type="text">
+                        </div>
+                        <div class="input__block">
+                            <div class="input__parameter">Введіть параметр "c":</div>
+                            <input required placeholder="число" type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result">
+                <div class="equation">
+                    <div class="equation__txt">Ви задали рівняння:</div>
+                    <div class="equation__block">
+                        <div class="equation__element">a</div>
+                        <div class="equation__element">x <span>2</span></div>
+                        <div class="equation__element">+</div>
+                        <div class="equation__element">b</div>
+                        <div class="equation__element">x</div>
+                        <div class="equation__element">+</div>
+                        <div class="equation__element">c</div>
+                        <div class="equation__element">=</div>
+                        <div class="equation__element">0</div>
+                    </div>
+                </div>
+                <div class="decision">
+
+                    <button class="calculation">Розрахувати</button>
+
+                    <div class="decision__block">
+                        <div class="decision__quantity">Задане рівняння має розвязків:</div>
+                        <div class="decision__value"></div>
+                    </div>
+
+                    <div class="decision__block">
+                        <div class="decision__txt"></div>
+                        <div class="decision__value"></div>
+                        <div class="decision__value"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
+    
+    
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
