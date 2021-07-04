@@ -63,14 +63,20 @@ calculation.addEventListener('click', function() {
         decisionValue.textContent = 'Некоректно задані параметри';
         equationData.equationDecision[0] = '';
         equationData.equationDecision[1] = '';
-        decisionX1.textContent = equationData.equationDecision[0];
-        decisionX2.textContent = equationData.equationDecision[1];
+       
     } else if (Discriminant < 0) {
         decisionValue.textContent = 'Дискримінант < 0, змінна х не має раціональних значень, які задовільняють рівняння';
         equationData.equationDecision[0] = '';
         equationData.equationDecision[1] = '';
-        decisionX1.textContent = equationData.equationDecision[0];
-        decisionX2.textContent = equationData.equationDecision[1];
+        
+    } else if(a == 0) {
+        let x1 = -c/b;
+        equationData.equationDecision[0] = x1;
+        decisionValue.textContent = 'При а = 0, змінна х має 1 значення, яке задовільняє рівняння';
+        equationData.equationDecision[1] = '';
+       
+
+
     } else {
         let x1 = (-b + Math.pow(Discriminant, 0.5))/(2 * a),
             x2 = (-b - Math.pow(Discriminant, 0.5))/(2 * a);
@@ -78,17 +84,15 @@ calculation.addEventListener('click', function() {
             equationData.equationDecision[0] = x1;
             decisionValue.textContent = 'Дискримінант = 0, змінна х має 1 значення, яке задовільняє рівняння';
             equationData.equationDecision[1] = '';
-            decisionX1.textContent = equationData.equationDecision[0];
-            decisionX2.textContent = equationData.equationDecision[1];
+            
         } else {
             equationData.equationDecision[0] = x1;
             equationData.equationDecision[1] = x2;
             decisionValue.textContent = 'Дискримінант > 0, змінна х має 2 значення, які задовільнють рівняння';
-            decisionX1.textContent = equationData.equationDecision[0];
-            decisionX2.textContent = equationData.equationDecision[1];
         }
     }
-
+    decisionX1.textContent = equationData.equationDecision[0];
+    decisionX2.textContent = equationData.equationDecision[1];
 });
 
 
