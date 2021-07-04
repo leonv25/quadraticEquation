@@ -1,69 +1,113 @@
+*
+  font-family: 'Roboto', sans-serif
+    
 .app
-    padding-left: 50px
-    padding-right: 50px
+    display: flex
+    align-items: center
+    flex-direction: column
+    
+
+.wrapper
+    background-color: #dddddd
+    width: 920px
+    padding-bottom: 30px
+
+
+.logo
+    width: 920px
+    height: 100px
+    text-align: center
+    background-color: #c7a3a3ab
     display: flex
     justify-content: center
     align-items: center
-    flex-direction: column
-
-.logo
-    margin: auto 0
-    width: 1200px
-    text-align: center
-    background-color: #c7a3a3ab
     h1
-        font-size: 40px
+        margin: 0
+        font-size: 38px
+        font-weight: 700
 
 .info
+    margin: 0 30px
     width: 900px
     h2
         font-size: 31px
+        font-weight: 700
     li
         list-style: none
         font-size: 25px
+        font-weight: 400
+        
 
 .quadratic_equation
+    margin: 0 30px
     width: 900px
-    font-size: 25px
+    font-size: 20px
    
     .input
         &__txt
             margin-top: 30px
             margin-bottom: 10px
+            font-weight: 400
         &__wrapper
             display: flex
             flex-direction: column
         &__block
-            width: 320px
+            min-width: 320px
             display: flex
             margin-bottom: 5px
         &__parameter
-            margin-right: 10px
-            width: 240px
+            margin-right: 36px
+            min-width: 240px
+            font-weight: 300
         input
             width: 50px
+            border-bottom: 1px solid #F4F4F4
+            border-left: 1px solid #E0E0E0
+            border-radius: 5px
+            border-right: 1px solid #E0E0E0
+            border-top: 1px solid #C0C0C0
+            box-shadow: 0px 1px 1px #C9C9C9 inset
+
+    .equation
+        margin-top: 20px
+        display: flex
+        &__txt
+            min-width: 240px
+            margin-right: 36px
+            font-weight: 400
+        &__block
+            display: flex
+            align-items: flex-end
+            font-weight: 300
 
     .result
         margin-top: 50px
-        .equation
-            display: flex
-            &__txt
-                margin-right: 36px
-            &__block
-                display: flex
+        
         .decision
             &__block
                 margin-top: 20px
                 margin-right: 20px
                 display: flex
+               
             &__value
                 width: 500px
-                padding-left: 153px
+                display: flex
+                font-weight: 300
+                span
+                    font-size: 15px
+                
             &__txt
-                width: 700px
-                font-weight: bold
+                min-width: 340px
+                font-weight: 400
+                
             button
                 margin: 70px 0 20px 0
                 width: 200px
                 height: 50px
                 font-size: 20px
+                font-weight: 400
+                border-radius: 10px
+                background-color: #424242
+                cursor: pointer
+                span
+                    color: #f7f3f3
