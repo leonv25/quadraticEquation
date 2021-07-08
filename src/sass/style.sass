@@ -1,20 +1,25 @@
 *
   font-family: 'Roboto', sans-serif
+  overflow-x: hidden
+
+
     
 .app
+    width: 972
     display: flex
+    justify-content: center
     align-items: center
     flex-direction: column
     
 
 .wrapper
     background-color: #dddddd
-    width: 920px
+    max-width: 900px
     padding-bottom: 30px
 
 
 .logo
-    width: 920px
+    max-width: 900px
     height: 100px
     text-align: center
     background-color: #c7a3a3ab
@@ -23,25 +28,25 @@
     align-items: center
     h1
         margin: 0
-        font-size: 38px
+        font-size: 28px
         font-weight: 700
 
 .info
     margin: 0 30px
-    width: 900px
+    max-width: 900px
     h2
-        font-size: 31px
+        font-size: 23px
         font-weight: 700
     li
         list-style: none
-        font-size: 25px
+        font-size: 18px
         font-weight: 400
         
 
 .quadratic_equation
     margin: 0 30px
-    width: 900px
-    font-size: 20px
+    max-width: 900px
+    font-size: 15px
    
     .input
         &__txt
@@ -54,13 +59,19 @@
         &__block
             min-width: 320px
             display: flex
+            align-items: center
             margin-bottom: 5px
         &__parameter
-            margin-right: 36px
             min-width: 240px
             font-weight: 300
+        &__indicator
+            width: 10px
+            height: 10px
+            border-radius: 100%
+            background: #ff0000cc
         input
             width: 50px
+            margin-right: 5px
             border-bottom: 1px solid #F4F4F4
             border-left: 1px solid #E0E0E0
             border-radius: 5px
@@ -73,7 +84,6 @@
         display: flex
         &__txt
             min-width: 240px
-            margin-right: 36px
             font-weight: 400
         &__block
             display: flex
@@ -81,7 +91,6 @@
             font-weight: 300
 
     .result
-        margin-top: 50px
         
         .decision
             &__block
@@ -90,24 +99,24 @@
                 display: flex
                
             &__value
-                width: 500px
+                max-width: 280px
                 display: flex
                 font-weight: 300
-                span
-                    font-size: 15px
                 
             &__txt
-                min-width: 340px
+                min-width: 240px
                 font-weight: 400
                 
             button
                 margin: 70px 0 20px 0
-                width: 200px
-                height: 50px
-                font-size: 20px
+                width: 150px
+                height: 35px
+                font-size: 15px
                 font-weight: 400
                 border-radius: 10px
                 background-color: #424242
                 cursor: pointer
                 span
                     color: #f7f3f3
+
+@import "media"
